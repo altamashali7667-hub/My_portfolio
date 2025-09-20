@@ -9,21 +9,21 @@ const HeroSection: React.FC = () => {
           <div className="order-2 md:order-1">
             <p className="text-primary-500 dark:text-primary-400 font-medium mb-4 animate-fade-in">Hello, I'm</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-in text-dark-900 dark:text-white">
-              Ayush Dhar Dwivedi
+              Altamash Ali
             </h1>
             <h2 className="text-xl md:text-2xl text-dark-700 dark:text-gray-300 mb-8 animate-slide-in">
-              Aspiring SDET | Frontend Developer | Automation Tester
+              Aspiring Financial Analyst | Investment Banking Analyst| Business Analyst (Operations IT)
             </h2>
 
             <div className="bg-white dark:bg-dark-800 p-6 rounded-lg shadow-md mb-8 animate-fade-in">
               <p className="text-dark-700 dark:text-gray-300 leading-relaxed">
-              I'm a passionate software engineer with expertise in backend development, frontend technologies, and test automation, focused on building efficient solutions and ensuring quality through automated testing.
+                Aspiring Financial Analyst with expertise in data-driven decision-making, financial modeling, and investment analysis, committed to delivering actionable insights that drive business growth.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mb-8 animate-fade-in">
               <a
-                href="/Ayush2_CV.pdf"
+                href="/My_resume.pdf"
                 className="px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white font-medium rounded-full flex items-center gap-2 transition-all shadow-md hover:shadow-lg w-full sm:w-auto justify-center"
                 download
               >
@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
 
             <div className="flex gap-4 animate-fade-in">
               <a 
-                href="https://github.com/ayushdhardwivedi55" 
+                href="https://github.com/altamashali7667-hub" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 bg-white dark:bg-dark-800 rounded-full text-dark-700 dark:text-gray-300 hover:shadow-md hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-200"
@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
                 </svg>
               </a>
               <a 
-                href="https://www.linkedin.com/in/ayush0505/" 
+                href="https://www.linkedin.com/in/altamashali750/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 bg-white dark:bg-dark-800 rounded-full text-dark-700 dark:text-gray-300 hover:shadow-md hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-200"
@@ -71,8 +71,8 @@ const HeroSection: React.FC = () => {
           <div className="order-1 md:order-2 flex justify-center items-center">
   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary-500 shadow-lg">
     <img 
-      src="/1738228506789.jpeg" 
-      alt="Ayush Dhar Dwivedi"
+      src="/altamash.jpg" 
+      alt="Altamash Ali"
       className="w-full h-full object-cover"
       style={{ objectPosition: 'center 10%' }} // Adjust the image position downward
     />

@@ -5,32 +5,20 @@ const SkillsSection: React.FC = () => {
   const skillCategories = [
     {
       title: 'Languages',
-      skills: ['Java', 'C', 'C++', 'Python', 'SQL', 'PL/SQL', 'JavaScript', 'HTML', 'CSS'],
+      skills: ['Java', 'C', 'C++', 'Python', 'SQL','JavaScript', 'HTML', 'CSS'],
     },
     {
-      title: 'Frameworks & Libraries',
-      skills: [ 'Selenium', 'Appium', 'JUnit', 'TestNG', 'EclEmma', 'Maven', 'JMeter', 'Postman Api', 'Katalon Studio','RestAssured'],
-    },
-    {
-      title: 'Testing & Automation',
-      skills: ['Selenium WebDriver', 'Appium', 'JMeter', 'Postman', 'Katalon Studio'],
-    },
-    {
-      title: 'CI/CD & DevOps',
-      skills: ['Jenkins', 'Docker', 'Kubernetes'],
+      title: 'Tools',
+      skills: ['MS Excel','SPSS', 'Power BI', 'Tableau'],
     },
     {
       title: 'Database',
-      skills: ['MySQL', 'PL/SQL'],
-    },
-    {
-      title: 'Version Control & Tools',
-      skills: ['Git', 'GitHub', 'Bitbucket', 'Jira'],
+      skills: ['SQL', 'MySQL'],
     },
     {
       title: 'Soft Skills',
-      skills: ['Agile', 'Teamwork', 'Leadership', 'Strategic Thinking', 'Communication'],
-    },
+      skills: ['Teamwork', 'Leadership', 'Strategic Thinking', 'Communication'],
+    }
   ];
 
   return (

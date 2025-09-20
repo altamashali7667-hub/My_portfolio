@@ -78,8 +78,8 @@ const ContactSection: React.FC = () => {
                   <Mail className="mr-4 flex-shrink-0 mt-1" size={20} />
                   <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:ayushdhardwivedi55@gmail.com" className="hover:underline">
-                      ayushdhardwiedi@gmail.com
+                    <a href="mailto:altamashali7667@gmail.com" className="hover:underline">
+                      altamashali7667@gmail.com
                     </a>
                   </div>
                 </div>
@@ -88,8 +88,8 @@ const ContactSection: React.FC = () => {
                   <Phone className="mr-4 flex-shrink-0 mt-1" size={20} />
                   <div>
                     <p className="font-medium">Phone</p>
-                    <a href="tel:+917009127961" className="hover:underline">
-                      +91-7009127961
+                    <a href="tel:+917667026750" className="hover:underline">
+                      +91-7667026750
                     </a>
                   </div>
                 </div>
@@ -99,12 +99,12 @@ const ContactSection: React.FC = () => {
                   <div>
                     <p className="font-medium">LinkedIn</p>
                     <a
-                      href="https://www.linkedin.com/in/ayush0505/"
+                      href="https://www.linkedin.com/in/altamashali750"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline"
                     >
-                      linkedin.com/in/ayush0505
+                      linkedin.com/in/altamashali750
                     </a>
                   </div>
                 </div>
@@ -114,12 +114,12 @@ const ContactSection: React.FC = () => {
                   <div>
                     <p className="font-medium">GitHub</p>
                     <a
-                      href="https://github.com/ayushdhardwivedi55"
+                      href="https://github.com/altamashali7667-hub"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline"
                     >
-                      github.com/ayushdhardwivedi
+                      github.com/altamashali7667-hub
                     </a>
                   </div>
                 </div>

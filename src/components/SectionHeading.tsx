@@ -20,5 +20,4 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({ title, subtitle }) => {
     </div>
   );
 };
-
 export default SectionHeading;

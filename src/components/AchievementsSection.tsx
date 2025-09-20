@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionHeading from './SectionHeading';
-import { Trophy, Code, Star } from 'lucide-react';
+import { Award } from 'lucide-react';
 
 interface Achievement {
   icon: React.ReactNode;
@@ -10,16 +10,21 @@ interface Achievement {
 
 const AchievementsSection: React.FC = () => {
   const achievements: Achievement[] = [
-    {
-      icon: <Trophy size={24} className="text-indigo-500 dark:text-indigo-400" />,
-      title: "Participated – Hackathon by Naukri.com",
-      description: "Took part in a national-level hackathon organized by Naukri.com, where I collaborated with a team to develop a real-time job-matching solution.",
-    },
-    {
-      icon: <Star size={24} className="text-indigo-500 dark:text-indigo-400" />,
-      title: "Built & Deployed 5+ Full-Stack Projects",
-      description: "Designed and deployed multiple full-stack applications using React, Node.js, and SQL/NoSQL databases, showcasing strong development and problem-solving skills.",
-    }
+     {
+    icon: <Award size={24} className="text-indigo-500 dark:text-indigo-400" />,
+    title: "Rapid-Fire Networking Activity",
+    description: "Led structured networking sessions with 10+ rapid questions per participant, captured videos and photos, and encouraged student participation, enhancing communication and interpersonal skills."
+  },
+  {
+    icon: <Award size={24} className="text-indigo-500 dark:text-indigo-400" />,
+    title: "Fresh Feels Branding & Marketing Project",
+    description: "Branded and marketed an unbranded product (tumbler), conducted market research, defined target audience and pricing strategies, and sold 32 units generating ₹9,170 revenue and ₹2,770 profit."
+  },
+  {
+    icon: <Award size={24} className="text-indigo-500 dark:text-indigo-400" />,
+    title: "Dean's List Recognition",
+    description: "Achieved Dean's List in 2024 for outstanding academic performance, demonstrating consistent dedication, excellence, and leadership in studies."
+  }
     
   ];
   

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import SkillsSection from './components/SkillsSection';
@@ -12,25 +12,29 @@ import Footer from './components/Footer';
 import ThemeToggle from './components/ThemeToggle';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false); // Always start in light mode
 
   useEffect(() => {
-    // Check for saved theme preference or use system preference
-    const isDark = localStorage.getItem('darkMode') === 'true' || 
-      (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    
-    setDarkMode(isDark);
+    // Check if user saved a preference in localStorage
+    const savedMode = localStorage.getItem('darkMode');
+    if (savedMode === 'true') {
+      setDarkMode(true);
+      document.documentElement.classList.add('dark');
+    } else {
+      setDarkMode(false);
+      document.documentElement.classList.remove('dark');
+    }
   }, []);
 
   useEffect(() => {
-    // Update the class on the document element when darkMode changes
+    // Apply dark/light mode classes
     if (darkMode) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
-    
-    // Save preference to localStorage
+
+    // Save user preference
     localStorage.setItem('darkMode', darkMode.toString());
   }, [darkMode]);
 

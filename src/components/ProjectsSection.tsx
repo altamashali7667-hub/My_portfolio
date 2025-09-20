@@ -1,78 +1,49 @@
 import React from 'react';
 import SectionHeading from './SectionHeading';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, FileText } from 'lucide-react';
 
 interface Project {
   title: string;
   timeline: string;
   contributions: string[];
   techStack: string[];
-  githubLink: string;
+  pdfLink: string;
   image?: string;
 }
 
 const ProjectsSection: React.FC = () => {
   const projects: Project[] = [
-    {
-        title: 'University Management System',
-        timeline: 'Nov 2024 - Nov 2024',
-        contributions: [
-          'Developed a full-featured university management system using Java and Swing for the desktop UI',
-          'Integrated MySQL database with JDBC for smooth data handling and persistence',
-          'Implemented role-based access control for admins, faculty, and students',
-          'Added email functionality via SMTP server for password recovery and notifications',
-          'Designed a scalable, normalized relational database schema for university operations'
-        ],
-      
-        techStack: ['Java', 'Swing', 'JDBC', 'MySQL', 'SMTP'],
-        githubLink: 'https://github.com/ayushdhardwivedi55/University-Management-System',
-        image: 'https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-      },      
-      {
-        title: 'Prodigy InfoTech Internship',
-        timeline: 'Jan 2025 – Feb 2025',
-        contributions: [
-          'Completed multiple Java-based tasks as part of the Prodigy InfoTech internship program',
-          'Developed a simulated e-commerce checkout system using object-oriented programming in Java',
-          'Created a basic login authentication system using Swing for GUI and Java logic for validation',
-          'Implemented a compatibility testing module to ensure software consistency across different environments',
-          'Enhanced understanding of Java fundamentals through hands-on projects and real-world scenarios'
-        ],
-      
-        techStack: ['Java', 'TestNG', 'Selenium'],
-        githubLink: 'https://github.com/ayushdhardwivedi55/ProdigyInternship',
-        image: 'https://miro.medium.com/v2/resize:fit:1400/1*MF-5KU1BdjYxcY6837JMHA.jpeg'
-      }
-,      
-{
-  title: 'LambdaTest Selenium Automation Project',
-  timeline: 'Jan 2025 – Feb 2025',
+     {
+    title: 'LBO (Leveraged Buyout) Financial Model',
+    timeline: 'Jan 2025 - Feb 2025',
+    contributions: [
+      'Built a comprehensive LBO model to analyze acquisition feasibility using debt and equity financing',
+      'Performed target company valuation using EBITDA multiples and DCF methodology',
+      'Created 5-year cash flow projections incorporating revenue growth, margins, and capital expenditure',
+      'Modeled debt repayment schedules, leverage ratios, and interest coverage to assess financial sustainability',
+      'Calculated equity investor returns (IRR & MOIC) under base, upside, and downside scenarios',
+      'Conducted sensitivity analysis on revenue growth, exit multiples, and cost of capital to evaluate deal risks'
+    ],
+    techStack: ['Excel', 'Financial Modeling', 'Valuation', 'DCF', 'Scenario Analysis'],
+    pdfLink: '/My LBO.pdf', // <-- stored in public folder
+    image: 'https://images.pexels.com/photos/6802046/pexels-photo-6802046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+  },
+  {
+  title: 'Currency Exhibition – Global Money Week',
+  timeline: 'Sep 2024',
   contributions: [
-    'Developed a Selenium-based test automation framework using Java, TestNG, and WebDriverManager',
-    'Automated cross-browser testing on LambdaTest\'s cloud Selenium grid to improve test coverage and reliability',
-    'Used Maven for dependency management and streamlined build processes',
-    'Integrated LambdaTest with GitHub for efficient bug reporting and tracking during test runs'
+    'Organized and led a campus-wide exhibition showcasing currencies from around the world to promote financial literacy',
+    'Researched historical and modern currency features, including security elements and denominations',
+    'Prepared informative presentations and visual displays for students, faculty, and department heads',
+    'Collaborated with faculty and staff to ensure smooth event execution and engagement',
+    'Collected participant feedback to measure knowledge improvement and event effectiveness',
+    'Developed educational insights on currency history, global trade, and financial awareness'
   ],
+  techStack: ['Event Management', 'MS PowerPoint', 'Research', 'Financial Literacy Tools'],
+  pdfLink: '/Currency.pdf', // Place your PDF in public folder
+  image: 'https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' // Example image
+}
 
-  techStack: ['Java', 'Selenium WebDriver', 'TestNG', 'WebDriverManager', 'Maven', 'LambdaTest', 'GitHub'],
-  githubLink: 'https://github.com/ayushdhardwivedi55/LambdaTest01',
-  image: 'https://media.licdn.com/dms/image/v2/D4E12AQE5tKNledWwCw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1726662465210?e=2147483647&v=beta&t=D18tUblJ4o10fzjvsxYaOmS2_igUY-FXObraw19ZesQ'
-}
-,
-{
-  title: 'EazyDeals Price Tracking Application',
-  timeline: 'Mar 2025 – Apr 2025',
-  contributions: [
-    'Developed a price tracking application using Next.js, enabling users to monitor product prices across various e-commerce platforms',
-    'Implemented dynamic product search functionality with real-time price updates',
-    'Designed a responsive user interface using Tailwind CSS for seamless user experience across devices',
-    'Deployed the application on Vercel for fast and reliable hosting'
-  ],
-  techStack: ['Next.js', 'Tailwind CSS', 'Vercel'],
-  githubLink: 'https://github.com/ayushdhardwivedi55/eazydeals',
-  //liveDemo: 'https://eazydealz-ayushdhardwivedi55s-projects.vercel.app/',
-  image: '/Screenshot 2025-04-25 020641.png'
-}
 
   ];
 
@@ -126,16 +97,15 @@ const ProjectsSection: React.FC = () => {
               </div>
               
               <div className="p-4 border-t border-gray-200 dark:border-dark-700 bg-gray-100 dark:bg-dark-850">
-                <a 
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 text-dark-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors py-2"
-                >
-                  <Github size={18} />
-                  <span>View on GitHub</span>
-                  <ExternalLink size={14} />
-                </a>
+                              <a 
+                href={project.pdfLink}
+                download
+                className="flex items-center justify-center gap-2 text-dark-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors py-2"
+              >
+                <FileText size={18} />
+                <span>Download PDF</span>
+                <ExternalLink size={14} />
+              </a>
               </div>
             </div>
           ))}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Github, Linkedin, Menu, X } from 'lucide-react';
 
 interface HeaderProps {
@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 font-bold text-lg md:text-xl text-primary-500">
             <a href="#home" className="flex items-center">
-              <span>Ayush Dhar Dwivedi</span>
+              <span>Altamash Ali</span>
             </a>
           </div>
           
@@ -58,18 +58,18 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
             ))}
             <div className="flex items-center space-x-2 ml-4">
               <a 
-                href="https://github.com/ayushdhardwivedi55" 
+                href="https://github.com/altamashali7667-hub" 
                 target="_blank" 
-                rel="noopener noreferrer"
+                rel="https://github.com/altamashali7667-hub"
                 className="p-2 rounded-full text-dark-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-dark-800 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-200"
                 aria-label="GitHub"
               >
                 <Github size={20} />
               </a>
               <a 
-                href="https://www.linkedin.com/in/ayush0505/" 
+                href="https://www.linkedin.com/in/altamashali750/" 
                 target="_blank" 
-                rel="noopener noreferrer"
+                rel="https://www.linkedin.com/in/altamashali750/"
                 className="p-2 rounded-full text-dark-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-dark-800 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-200"
                 aria-label="LinkedIn"
               >
@@ -107,18 +107,18 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
             ))}
             <div className="flex items-center space-x-2 py-3 px-4">
               <a 
-                href="https://github.com/ayushdhardwivedi55" 
+                href="https://github.com/altamashali7667-hub" 
                 target="_blank" 
-                rel="noopener noreferrer"
+                rel="https://github.com/altamashali7667-hub"
                 className="p-2 rounded-full text-dark-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-dark-800 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-200"
                 aria-label="GitHub"
               >
                 <Github size={20} />
               </a>
               <a 
-                href="https://www.linkedin.com/in/ayush0505/"
+                href="https://www.linkedin.com/in/altamashali750/"
                 target="_blank" 
-                rel="noopener noreferrer"
+                rel="https://www.linkedin.com/in/altamashali750/"
                 className="p-2 rounded-full text-dark-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-dark-800 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-200"
                 aria-label="LinkedIn"
               >

@@ -13,21 +13,15 @@ const EducationSection: React.FC = () => {
   const educationList: Education[] = [
     {
       institution: 'Lovely Professional University',
-      degree: 'B.Tech in Computer Science and Engineering',
-      period: '2022 - Present',
-      score: 'CGPA: 7.00',
+      degree: 'MBA in Finance & Operations',
+      period: '2024- present',
+      score: 'CGPA: 7.93',
     },
     {
-      institution: 'DAV Public School',
-      degree: 'Intermediate',
-      period: '2020 - 2021',
-      score: 'Percentage: 84.8%',
-    },
-    {
-      institution: 'DAV Public School',
-      degree: 'Matriculation',
-      period: '2018 - 2019',
-      score: 'Percentage: 91%',
+      institution: 'Lovely Professional University',
+      degree: 'B.COM in Banking & Finance',
+      period: '2021-2024',
+      score: 'CGPA: 8.10',
     },
   ];
 

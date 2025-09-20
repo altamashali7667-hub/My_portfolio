@@ -9,13 +9,13 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center">
           <div className="text-center mb-6">
-            <h2 className="text-2xl font-bold mb-2">Ayush Dhar Dwivedi</h2>
-            <p className="text-gray-400">Aspiring SDET | Frontend Developer | Automation Tester</p>
+            <h2 className="text-2xl font-bold mb-2">Altamash Ali</h2>
+            <p className="text-gray-400">Aspiring Financial Analyst | Investment Banking Analyst| Business Analyst (Operations IT)</p>
           </div>
           
           <div className="flex space-x-4 mb-6">
             <a 
-              href="https://github.com/ayushdhardwivedi55" 
+              href="https://github.com/altamashali7667-hub" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 bg-dark-800 rounded-full hover:bg-dark-700 transition-colors"
@@ -24,16 +24,16 @@ const Footer: React.FC = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://www.linkedin.com/in/ayush0505/" 
+              href="linkedin.com/in/altamashali750" 
               target="_blank" 
-              rel="noopener noreferrer"
+              rel="https://www.linkedin.com/in/altamashali750/"
               className="p-2 bg-dark-800 rounded-full hover:bg-dark-700 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
             </a>
             <a 
-              href="mailto:ayushdhardwivedi55@gmail.com" 
+              href="mailto:altamashali7667@gmail.com" 
               className="p-2 bg-dark-800 rounded-full hover:bg-dark-700 transition-colors"
               aria-label="Email"
             >
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
           
           <div className="text-center text-gray-500 text-sm">
             <p className="flex items-center justify-center flex-wrap gap-1">
-              <span>&copy; {currentYear} Ayush Dhar Dwivedi All rights reserved.</span>
+              <span>&copy; {currentYear} Altamash Ali All rights reserved.</span>
               <span className="flex items-center">
                 Made with <Heart size={14} className="mx-1 text-primary-500" fill="currentColor" /> in React
               </span>
