@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mb-8 animate-fade-in">
               <a
-                href="/My_resume.pdf"
+                href="/Resume.pdf"
                 className="px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white font-medium rounded-full flex items-center gap-2 transition-all shadow-md hover:shadow-lg w-full sm:w-auto justify-center"
                 download
               >
